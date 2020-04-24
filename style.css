@@ -1,0 +1,89 @@
+/*-----Задний фон и левое меню-----*/
+html{
+  width: 100%;
+  height: 100%;
+  overflow:hidden;
+
+}
+body {
+  display: block;
+  margin:0;
+  font-family: 'Roboto Condensed', sans-serif;
+  background: url("https://images.unsplash.com/photo-1583784932052-e2e31867d9ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+body .main {
+  display: block;
+  position:relative;
+  width:100%;
+  height:100%;
+}
+.left-menu {
+	position:fixed;
+	background: rgba(50,50,50,0.7);
+	width:200px;
+	min-width:200px;
+	height:100%;
+	top:0;
+	left:0;
+	z-index:1;
+	
+}
+/*-----Переключение языков-----*/
+.left-menu .language ul {
+	display:block;
+	text-align:center;
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+.left-menu .language ul li {
+	display:inline;
+	margin-right:10px;
+	text-decoration:none;
+	color:white;
+}
+.left-menu .language ul li a {
+	text-decoration:underline;
+	color:white;
+	font-size:10pt;
+} 
+/*-----Лого компании-----*/
+.left-menu .title {
+	text-align:center;
+	color:white;
+	cursor:default;
+}
+.left-menu .title .project {
+	font-size:18pt;
+	position:relative;
+	bottom:12px;
+}
+.left-menu .title .geninj {
+	font-size:30pt;
+}
+/*-----Меню сайта-----*/
+.ul_list_menu {
+	list-style:none;
+	display:block;
+	position:relative;
+	top:15px;
+	left:28px;
+}
+.ul_list_menu li {
+	display:inline-block;
+	margin-bottom:2px;
+}
+.ul_list_menu li a {
+	display:block;
+	text-decoration:none;
+	color:white;
+	font-size:10pt;
+}
+.ul_list_menu li:hover {
+	border-bottom:1px solid white;
+}
+
